@@ -52,7 +52,7 @@ img {
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
-    width: 100%; /* Задаємо ширину 100% для кнопок */
+    width: calc(100% - 6%); /* Врахування відступів з обох сторін */
 }
 
 button {
