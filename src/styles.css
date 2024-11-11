@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,7 +5,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 20px;
-     background-image: linear-gradient(to right, #aabac7,#ffffff);
+     background-image: linear-gradient(to right, #FF4E50, #F9D423);
     
 }
 
@@ -47,11 +46,11 @@ h1 {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #96acab;
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .buttons button:hover {
-    background-color: #0056b3;
+    background-color: #207ada;
 }
