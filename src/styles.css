@@ -1,59 +1,73 @@
 body {
+  font-family: 'Montserrat', sans-serif; /* Задано шрифт Montserrat */
   margin: 0;
+  padding: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Світло-сірий фон */
+}
+
+header {
+  height: 8vh;
+  display: flex;
   justify-content: center;
-  font-family: "Verdana", sans-serif;
-  height: 100vh;
-  background-color: #eeeeee;
+  align-items: center;
+  background-color: #f0f0f0; /* Той же світло-сірий фон */
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 h1 {
-  margin: 0 0 16px;
-  color: #333333;
+  margin: 0;
+  font-weight: 700; /* Жирний шрифт для заголовка */
 }
 
-.container {
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 75%;
-  text-align: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+  gap: 0; /* Спочатку відключаємо gap */
+  width: calc(100% - 6%); /* Врахування відступів */
   margin: 20px 0;
-  max-height: 70vh;
-  overflow-y: auto;
+  padding: 0; /* Відключаємо внутрішні відступи */
 }
 
-.gallery img {
-  width: 200px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+img {
+  border-radius: 10px;
+  width: 100%; /* Ширина 100% від колонки */
+  height: auto; /* Автоматична висота */
 }
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Дозволяє кнопкам переходити на новий рядок */
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: calc(100% - 6%); /* Врахування відступів з обох сторін */
 }
 
 button {
-  padding: 10px;
+  flex: 1; /* Дозволяє кнопкам займати доступний простір */
+  padding: 15px; /* Збільшено розмір кнопки */
   border: none;
-  border-radius: 5px;
+  border-radius: 20px; /* Збільшено радіус заокруглення */
+  background-color: #e60023; /* Новий колір фону кнопок */
   color: white;
   cursor: pointer;
-  background-color: #777777;
-  transition: background-color 0.3s;
+  font-size: 16px; /* Збільшено розмір тексту на 3 пункти */
+  font-family: 'Montserrat', sans-serif; /* Шрифт кнопок Montserrat */
+  min-width: 150px; /* Мінімальна ширина кнопки */
 }
 
 button:hover {
-  background-color: #444444;
+  background-color: #b3001a; /* Темніший колір при наведенні */
 }
