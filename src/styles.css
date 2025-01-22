@@ -32,18 +32,23 @@ main {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 колонки */
-  gap: 0; /* Спочатку відключаємо gap */
-  width: calc(100% - 6%); /* Врахування відступів */
-  margin: 20px 0;
-  padding: 0; /* Відключаємо внутрішні відступи */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-img {
-  border-radius: 10px;
-  width: 100%; /* Ширина 100% від колонки */
-  height: auto; /* Автоматична висота */
+.gallery img {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .buttons {
@@ -53,6 +58,21 @@ img {
   gap: 10px;
   margin-bottom: 20px;
   width: calc(100% - 6%); /* Врахування відступів з обох сторін */
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
 }
 
 button {
