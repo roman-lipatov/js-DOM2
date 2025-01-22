@@ -12,7 +12,15 @@ let currentPage = 1;
 
 export function initializeEventListeners() {
     document.getElementById('loadMore').addEventListener('click', async () => {
-        const images = await fetchImages(++currentPage);
+    let images
+      if(currentPage >=4) {
+        currentPage+=32
+        images = await fetchImages(currentPage);
+      } else {
+        currentPage++
+        images = await fetchImages(currentPage);
+      }
+        
         displayImages(images);
     });
 
@@ -22,6 +30,7 @@ export function initializeEventListeners() {
     });
 
     document.getElementById('removeLast').addEventListener('click', () => {
+        console.log("Plagiat")
         removeLastImage();
     });
 
@@ -30,6 +39,7 @@ export function initializeEventListeners() {
     });
 
     document.getElementById('shuffleGallery').addEventListener('click', () => {
+        console.log("--__--")
         shuffleGallery();
     });
 

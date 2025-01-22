@@ -43,13 +43,15 @@ main {
   width: 300px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.7s;
 }
 
 .gallery img:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 14px 14px rgba(0, 0, 0, 0.3);
 }
+
+/* Plagiat */
 
 .buttons {
   display: flex;
@@ -86,8 +88,10 @@ button {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   min-width: 150px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #15304e;
+  transform: rotate(180deg);
 }
