@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Галерея</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Моя Галерея</h1>
-    
-    <!-- Контейнер для галереї -->
-    <div id="gallery" class="gallery"></div>
-    
-    <!-- Контейнер для кнопок -->
-    <div class="buttons">
-        <button onclick="loadMoreImages()">Завантажити ще 4 картинки</button>
-        <button onclick="clearGallery()">Очистити галерею</button>
-        <button onclick="removeLastImage()">Видалити останню картинку</button>
-        <button onclick="reverseGallery()">Перевернути галерею</button>
-    </div>
-    
-    <!-- Підключення JavaScript -->
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Галерея</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Моя Галерея</h1>
+        <!-- Контейнер для галереї -->
+        <div id="gallery" class="gallery"></div>
+        <!-- Контейнер для кнопок -->
+        <div class="buttons">
+            <button onclick="loadMoreImages()">Завантажити ще 4 картинки</button>
+            <button onclick="clearGallery()">Очистити галерею</button>
+            <button onclick="removeLastImage()">Видалити останню картинку</button>
+            <button onclick="reverseGallery()">Перевернути галерею</button>
+        </div>
+        <!-- Підключення JavaScript -->
+        <script type="module" src="./index.js"></script>
+    </body>
 </html>
