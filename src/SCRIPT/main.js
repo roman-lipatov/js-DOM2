@@ -9,7 +9,6 @@ async function loadImages(page) {
     displayImages(images);
 }
 
-// Початкове завантаження
 loadImages(currentPage);
 
 // Події кнопок
